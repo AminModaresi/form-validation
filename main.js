@@ -72,19 +72,19 @@ function RemoveAllAlert() {
   payValue.classList.remove("border-danger");
 }
 
-Name.addEventListener("blur", (e) => {
+Name.addEventListener("blur", () => {
   alertname.classList.remove("show");
   Name.classList.remove("border-danger");
 });
-LastName.addEventListener("blur", (e) => {
+LastName.addEventListener("blur", () => {
   alertlastname.classList.remove("show");
   LastName.classList.remove("border-danger");
 });
-PhoneNumber.addEventListener("blur", (e) => {
+PhoneNumber.addEventListener("blur", () => {
   alertphonenumber.classList.remove("show");
   PhoneNumber.classList.remove("border-danger");
 });
-payValue.addEventListener("blur", (e) => {
+payValue.addEventListener("blur", () => {
   alertpayvalue.classList.remove("show");
   payValue.classList.remove("border-danger");
 });
