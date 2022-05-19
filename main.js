@@ -38,8 +38,11 @@ submit.addEventListener("click", (e) => {
     LastName.classList.add("border-success");
   }
 
-  if (PhoneNumber.value.trim() == "" || PhoneNumber.value.length != 11 || isNaN(PhoneNumber.value)) {
+  if (PhoneNumber.value.trim() == "" || isNaN(PhoneNumber.value)) {
     addAlert(PhoneNumber , alertphonenumber , 'شماره تلفن اجباری است');
+    valid = false;
+  }else if(PhoneNumber.value.length != 11){
+    addAlert(PhoneNumber , alertphonenumber , 'شماره تلفن باید 11 رقم باشد');
     valid = false;
   } else {
     PhoneNumber.classList.add("border-success");
@@ -80,6 +83,10 @@ LastName.addEventListener("blur", (e) => {
 PhoneNumber.addEventListener("blur", (e) => {
   alertphonenumber.classList.remove("show");
   PhoneNumber.classList.remove("border-danger");
+});
+payValue.addEventListener("blur", (e) => {
+  alertpayvalue.classList.remove("show");
+  payValue.classList.remove("border-danger");
 });
 payValue.addEventListener("input" , ()=>{
   priceText.innerHTML = `${formatMoney(RialToToman(payValue.value) , 0 , "," , ".")} تومان`;
