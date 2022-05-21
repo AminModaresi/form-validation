@@ -7,17 +7,17 @@ body {
 }
 
 p {
-    margin: 0;
+    margin: 0 !important;
 }
 
 .custom-input-group-text {
-    border-radius: 0;
+    border-radius: 0 !important;
     border-top-left-radius: 0.3rem !important;
     border-bottom-left-radius: 0.3rem !important;
 }
 
 .custom-input-group-input {
-    border-radius: 0;
+    border-radius: 0 !important;
     border-top-right-radius: 0.3rem !important;
     border-bottom-right-radius: 0.3rem !important;
 }
