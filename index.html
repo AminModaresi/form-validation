@@ -22,7 +22,7 @@
               <p class="fs-4">فرم پرداخت</p>
             </header>
             <main class="py-3 px-4">
-              <form name="pay" action="">
+              <form id="pay" action="">
                 <div class="row">
                   <div class="col-md-6 position-relative mb-4">
                     <label for="" class="form-label fs-4">نام : </label>
@@ -54,9 +54,7 @@
                       type="tel"
                       class="form-control py-2 px-3"
                       placeholder="09000000000"
-                      pattern="09[0-9]{9}"
                       name="phonenumber"
-                      required
                     />
                     <small id="alert-phonenumber" class="alert-text text-danger">اجباری</small>
                   </div>
@@ -67,9 +65,7 @@
                         type="number"
                         class="form-control input-number custom-input-group-input py-2 px-3"
                         placeholder="100000"
-                        min="100000"
                         name="payValue"
-                        required
                       />
                       <span class="input-group-text custom-input-group-text">
                         ریال

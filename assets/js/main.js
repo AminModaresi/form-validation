@@ -1,7 +1,7 @@
 let priceText = document.querySelector("#priceText");
 let persian = /^[\u0600-\u06FF\s]+$/;
 let RialToToman = (price) => price / 10;
-
+let form = document.querySelector("#pay");
 // input
 let Name = document.querySelector("input[name='name']");
 let LastName = document.querySelector("input[name='lastname']");
@@ -14,7 +14,7 @@ let alertname = document.querySelector("#alert-name");
 let alertlastname = document.querySelector("#alert-lastname");
 let alertphonenumber = document.querySelector("#alert-phonenumber");
 let alertpayvalue = document.querySelector("#alert-payValue");
-submit.addEventListener("click", (e) => {
+form.addEventListener("submit", (e) => {
   let valid = true;
   e.preventDefault();
   RemoveAllAlert();
